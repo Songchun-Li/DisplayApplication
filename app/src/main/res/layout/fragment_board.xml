@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <FrameLayout
+        android:layout_width="844dp"
+        android:layout_height="473dp"
+        android:layout_gravity="center"
+        android:background="@drawable/dashboard">
+
+        <LinearLayout
+            android:layout_width="808dp"
+            android:layout_height="440dp"
+            android:layout_gravity="center"
+            android:background="@drawable/stroke">
+
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/board_penguin_gif"
+                android:layout_width="0dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:src="@mipmap/penguin_animie" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/board_slogan_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="120dp"
+                    android:singleLine="true"
+                    android:textColor="#40B1DE"
+                    android:textSize="79sp" />
+
+                <TextView
+                    android:id="@+id/board_slogan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="just jumped"
+                    android:textColor="#000000"
+                    android:textSize="43sp" />
+
+                <TextView
+                    android:id="@+id/board_slogan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="into water!"
+                    android:textColor="#000000"
+                    android:textSize="43sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</FrameLayout>

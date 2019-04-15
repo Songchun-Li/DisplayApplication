@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="@android:integer/config_longAnimTime"
+    android:fromYDelta="100%"
+    android:toYDelta="0%"
+    android:repeatCount="0"
+    android:repeatMode="restart"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    >
+
+</translate>

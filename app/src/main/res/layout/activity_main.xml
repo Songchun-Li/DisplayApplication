@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.MainActivity"
+    android:id="@+id/main_base">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:id="@+id/main_pic_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="#F1F0EC">
+
+        <ImageView
+            android:id="@+id/main_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            android:src="@mipmap/container"
+            android:scaleType="centerCrop"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/main_info_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:background="#F1F0EC"
+            >
+
+            <!--
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="board"
+                android:layout_gravity="end|bottom"
+                android:onClick="onBoard"
+                />
+                -->
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        >
+
+        <ProgressBar
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="107dp"
+            android:layout_height="107dp"
+            android:progress="100"
+            android:progressDrawable="@drawable/circle_lower" />
+        
+        <ProgressBar
+            android:layout_width="107dp"
+            android:layout_height="107dp"
+            style="?android:progressBarStyleHorizontal"
+            android:progress="0"
+            android:progressDrawable="@drawable/circle"
+            android:id="@+id/main_progress"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pause"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_fragment_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <!-- Here is used to place the fragment -->
+
+    </FrameLayout>
+
+
+</FrameLayout>
